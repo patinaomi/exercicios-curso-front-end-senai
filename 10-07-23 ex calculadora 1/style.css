@@ -48,6 +48,7 @@ input {
     font-family: var(--fonte-texto);
     height: 60px;
     box-shadow: 10px 10px 10px 0 rgb(196, 194, 194);
+    background-color: rgb(255, 251, 251);
 }
 
 button {
