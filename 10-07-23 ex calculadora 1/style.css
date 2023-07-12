@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla:wght@200;500;700&display=swap');
+
+:root {
+    --fonte-titulo: 'Karla', sans-serif;
+    --fonte-texto: 'Inconsolata', monospace;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(229, 227, 245);
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
