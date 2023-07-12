@@ -7,8 +7,111 @@
 
 * {
     padding: 0;
-    margin: 100px;
+    margin: 0;
     box-sizing: border-box;
     text-align: center;
-    font-size: 44px; 
+    background-color: antiquewhite;
+    list-style: none;
+}
+
+h2 {
+    margin: 5% 0 2% 0;
+    font-size: 2.75em;
+    font-family: var(--fonte-titulo);
+}
+
+p {
+    margin-bottom: 6%;
+    font-size: 1.5em;
+    font-family: var(--fonte-texto);
+}
+
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5% 20%;
+
+}
+
+.ex-tabela {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    
+}
+
+
+table {
+    width: 400px;
+    height: 400px;
+    font-size: 2.75em;
+    border: 1px solid black;
+    align-self: center;
+    
+}
+
+td {
+    border: 1px dotted black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 0 auto;
+    grid-gap: 10px;
+}
+
+li {
+    font-size: 2.75em;
+    border: 1px solid black;
+    align-self: center;
+    border-radius: 5px;
+    width: 200px;
+    padding: 65px;
+}
+
+.botoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 8%;
+}
+
+button {
+  border: 1px solid gray;
+  width: 35%;
+  border-radius: 20px;
+  padding: 12px;
+  font-size: 18px;
+  color:black;
+  font-family: var(--fonte-texto);
+  text-align: center;
+}
+
+button:hover {
+    font-weight: bold;
+    background-color: #E4DCCF;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+
+.vermelho {
+    background-color: red;
+}
+
+.azul {
+    background-color: blue;
+}
+
+.verde {
+    background-color: green;
+}
+
+.amarelo {
+    background-color: yellow;
 }

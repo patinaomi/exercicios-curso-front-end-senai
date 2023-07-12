@@ -9,18 +9,43 @@
 </head>
 <body>
     <h2>05/07/23 - Exercício JavaScript ex.02</h2>
-    <p>Feito com a tag table</p>
-    <table>
-        <tr>
-            <td>1</td>
-            <td>2</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>4</td>
-        </tr>
-    </table>
-    
+
+    <main class="conteudo">
+        <section class="ex-tabela">
+            <p>Ex. feito com tabela</p>
+            <table>
+                <tr>
+                    <td id="quadro1">1</td>
+                    <td id="quadro2">2</td>
+                </tr>
+                <tr>
+                    <td id="quadro3">3</td>
+                    <td id="quadro4">4</td>
+                </tr>
+            </table>
+
+            <div class="botoes">
+                <button onclick="vogais()">Vogais</button>
+                <button onclick="romanos()">Romanos</button>
+            </div>
+        </section>
+
+        <section>
+            <p>Ex. feito com grid</p>
+            <ul class="grid">
+                <li id="grid1">1</li>
+                <li id="grid2">2</li>
+                <li id="grid3">3</li>
+                <li id="grid4">4</li>
+            </ul>
+
+            <div class="botoes">
+                <button onclick="vogaisGrid()">Vogais</button>
+                <button onclick="romanosGrid()">Romanos</button>
+            </div>
+        </section>
+
+    </main>
     <script src='index.js'></script>
 </body>
 </html>
