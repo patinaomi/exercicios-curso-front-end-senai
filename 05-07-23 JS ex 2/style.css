@@ -51,6 +51,7 @@ table {
     font-size: 2.75em;
     border: 1px solid black;
     align-self: center;
+    font-family: var(--fonte-titulo);
     
 }
 
@@ -72,6 +73,7 @@ li {
     border-radius: 5px;
     width: 200px;
     padding: 65px;
+    font-family: var(--fonte-titulo);
 }
 
 .botoes {
