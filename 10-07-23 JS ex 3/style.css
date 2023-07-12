@@ -9,7 +9,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    text-align: center;
     background-color: rgb(255, 230, 245);
     list-style: none;
 }
@@ -17,7 +16,7 @@
 .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   margin: 10% 25%;
       
 }
@@ -25,7 +24,9 @@
 .conteudo {
     width: 90%;
     display: flex;
+      justify-content: center;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
 }
 
@@ -46,19 +47,33 @@ h2 {
     font-family: var(--fonte-titulo);
 }
 
+.resposta {
+    font-size: 2em;
+    font-family: var(--fonte-texto);
+}
+
 .caixa-de-texto {
-    display: flex;
-    justify-content: center;
+
+    text-align: center;
     width: 60%;
     padding: 20px 0;
     border-radius: 100px;
-    font-size: 2em;
+    font-size: 1.9em;
     font-family: var(--fonte-texto);
     background-color: white;
 }
 
 button {
     text-align: center;
-    font-size: 24px;
+    font-size: 1.9em;
     width: 300px;
+    font-family: var(--fonte-texto);
+    padding: 8px;
+    background-color: rgb(195, 180, 233);
+}
+
+button:hover {
+    background-color: rgb(152, 122, 233);
+    transition: 0.5s;
+    font-size: 2em;
 }
