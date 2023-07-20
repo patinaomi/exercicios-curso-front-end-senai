@@ -24,8 +24,9 @@ function tabuada() {
     for (i = 1; i <= 10; i++) {
       var tabuada = i * t1;
 
-      document.getElementById("resultado").innerHTML = texto +=
-        t1 + " X " + i + " = " + tabuada + "<br>";
+      document.getElementById("resultado").innerHTML = texto += t1 + " X " + i + " = " + tabuada + "<br>";
     }
-  }
+  }  
+    //coloquei esse campo em branco para apagar o número que digitamos no campo                
+    document.getElementById("campo1").value = "";
 }
