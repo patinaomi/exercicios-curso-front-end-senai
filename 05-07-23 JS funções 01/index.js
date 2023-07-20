@@ -34,6 +34,7 @@ function romanos() {
     obj4.className = "azul";
 }
 
+//aqui foi feito uma função diferente para utilizar no grid pois se não alterava as duas tabelas ao mesmo tempo
 function vogaisGrid() {
   document.getElementById("grid1").innerHTML = "A";
   var obj1 = document.getElementById("grid1");

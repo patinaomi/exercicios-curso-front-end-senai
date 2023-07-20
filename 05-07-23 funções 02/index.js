@@ -4,6 +4,8 @@ function funcao01() {
 
     //lembrar de criar uma variável
     var obj01 = document.getElementById("id-body");
+
+    //nome da classe que vai fazer a alteração
     obj01.className="alt01";
 }
 
