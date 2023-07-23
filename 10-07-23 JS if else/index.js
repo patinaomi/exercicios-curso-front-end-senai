@@ -10,4 +10,6 @@ function botao() {
         document.getElementById("recebe").innerHTML="Digite uma opção válida.";
         
     }
+
+    
 }
