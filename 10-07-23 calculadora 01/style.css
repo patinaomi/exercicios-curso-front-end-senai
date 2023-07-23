@@ -15,7 +15,7 @@
 }
 
 .container {
-    margin: 6%;
+    margin: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,6 +27,10 @@ h1 {
     font-size: 2.5em;
     color: #545B77;
     
+}
+
+h2 {
+    font-family: var(--fonte-texto);
 }
 
 .calculadora {
@@ -44,7 +48,7 @@ h3 {
 }
 
 input {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: var(--fonte-texto);
     height: 60px;
     box-shadow: 10px 10px 10px 0 rgb(196, 194, 194);

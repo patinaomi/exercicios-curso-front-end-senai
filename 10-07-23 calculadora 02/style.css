@@ -44,7 +44,7 @@ h3 {
 }
 
 input {
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: var(--fonte-texto);
     height: 60px;
     box-shadow: 10px 10px 10px 0 rgb(196, 194, 194);
