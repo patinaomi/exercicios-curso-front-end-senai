@@ -11,7 +11,7 @@
     box-sizing: border-box;
     text-align: center;
     list-style: none;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(231, 240, 255);
 }
 
 input {
@@ -19,19 +19,26 @@ input {
     font-size: 21px;
     font-family: var(--fonte-titulo);
     border-radius: 50px;
+    background-color: white;
 }
+
+
 
 button {
     margin-top: 40px;
     width: 20%;
     padding: 10px;
     font-family: var(--fonte-texto);
+    font-size: 1em;
 }
 
 button:hover {
     transition: 0.3s;
-    background-color: rgb(232, 195, 243);
+    background-color: rgb(195, 209, 243);
+    font-weight: bold;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
+
 h1 {
     margin: 5%;
     font-family: var(--fonte-titulo);
@@ -43,24 +50,38 @@ h3 {
     margin-bottom: 20px;
 }
 
+h4 {
+    margin-top: 30px;
+    font-family: var(--fonte-titulo);
+}
+
 p {
     font-size: 44px;
     font-family: var(--fonte-texto);
+    margin-bottom: 30px;
 }
 
 table {
     border: 2px solid;
-    height: 100px;
+    padding: 20px;
     width: 20%;
-    margin: 10%;
+    margin: auto auto;
 }
 
-
 .container {
-    margin: 10%;
+    margin: auto auto;
+    background-color: rgb(255, 255, 255);
+    font-size: 24px;
+    padding: 20px;
+    width: 20%;
+    border: 2px solid;
+}
+
+.resultado-container {
+    margin: auto auto;
     background-color: yellow;
     font-size: 24px;
-    padding: 100px;
+    padding: 20px;
     width: 20%;
     border: 2px solid;
 }

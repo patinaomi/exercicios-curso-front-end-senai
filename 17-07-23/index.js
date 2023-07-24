@@ -8,7 +8,7 @@ function somar() {
   document.getElementById("resultado-tabela").innerHTML = soma;
   document.getElementById("resultado-div").innerHTML = soma;
   var obj3 = document.getElementById("resultado-div");
-  obj3.className = "container";
+  obj3.className = "resultado-container";
 
   var resultado = (document.getElementById("resultado-campo").value = soma);
 }

@@ -10,19 +10,22 @@
     <h1>17/07/23 - Exercícios JavaScript</h1>
     <h3>Entre com um número e clique OK:</h3>
 
-    <section class="campos-soma">
-
-    <input type="text" id="campo1">
-    <input type="text" id="campo2">
-</section>
+    <section>
+        <input type="text" id="campo1" placeholder="valor 1">
+        <input type="text" id="campo2" placeholder="valor 2">
+    </section>
     
     <button onclick="somar()">Somar</button>
+    <h4>Resultado em um parágrafo:</h4>
     <p id="resultado-p"></p>
+
+    <h4>Resultado dentro de uma tabela:</h4>
     <table>
         <td id="resultado-tabela"></td>
-        
     </table>
-    <div id="resultado-div"></div>
+    <h4>Resultado dentro de uma div:</h4>
+    <div class="container" id="resultado-div"></div>
+    <h4>Resultado dentro de um campo de texto:</h4>
     <input type="text" id="resultado-campo">
 
     <script src="index.js"></script>
