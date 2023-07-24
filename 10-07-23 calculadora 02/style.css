@@ -61,6 +61,7 @@ button {
     font-size: 1.4em;
     font-family: var(--fonte-titulo);
     box-shadow: 10px 10px 10px rgb(196, 194, 194);
+    cursor: pointer;
 }
 
 button:active {

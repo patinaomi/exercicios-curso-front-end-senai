@@ -36,6 +36,7 @@ h6 {
     font-family: var(--fonte-titulo);
     background-color: rgb(120, 197, 97);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .botao:hover {

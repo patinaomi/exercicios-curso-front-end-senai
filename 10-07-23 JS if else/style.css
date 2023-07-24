@@ -76,6 +76,7 @@ button {
     font-family: var(--fonte-texto);
     padding: 8px;
     background-color: rgb(195, 180, 233);
+    cursor: pointer;
 }
 
 button:hover {

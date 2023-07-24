@@ -92,6 +92,7 @@ button {
   color:black;
   font-family: var(--fonte-texto);
   text-align: center;
+  cursor: pointer;
 }
 
 button:hover {

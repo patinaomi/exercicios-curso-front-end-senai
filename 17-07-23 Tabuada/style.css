@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla:wght@200;500;700&display=swap');
+
+:root {
+    --fonte-titulo: 'Karla', sans-serif;
+    --fonte-texto: 'Inconsolata', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(223, 143, 209);
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    color: rgb(250, 252, 192);
+}
+
+h3 {
+    font-size: 1.5em;
+    font-family: var(--fonte-texto);
+}
+
+.principal {
+    margin: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+input {
+    background-color: white;
+    font-family: var(--fonte-texto);
+    font-size: 2em;
+    padding: 20px;
+    width: 60%;
+}
+
+button {
+    background-color: khaki;
+    padding: 10px;
+    width: 60%;
+    font-family: var(--fonte-texto);
+    opacity: 0.8;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 1
+}
+
+.resultado-tabuada {
+    border: 2px dotted purple;
+    line-height: 2em;
+    width: 15%;
+    font-family: var(--fonte-texto);
+    font-size: 1.4em;
+    background-color: aliceblue;
+}

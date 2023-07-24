@@ -30,6 +30,7 @@ button {
     padding: 10px;
     font-family: var(--fonte-texto);
     font-size: 1em;
+    cursor: pointer;
 }
 
 button:hover {

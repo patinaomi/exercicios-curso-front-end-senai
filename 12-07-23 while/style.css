@@ -48,8 +48,9 @@ input {
 button {
     font-family: var(--fonte-texto);
     font-size: 1em;
-  padding: 19px 20px;
-  background-color: rgb(132, 168, 222);
+    padding: 19px 20px;
+    background-color: rgb(132, 168, 222);
+    cursor: pointer;
   
   
 }

@@ -41,6 +41,7 @@ h6 {
     background-color: rgb(120, 197, 97);
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    cursor: pointer;
 }
 
 .botao:hover {
