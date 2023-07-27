@@ -45,8 +45,7 @@ function impr() {
         
         //elimina números repetidos do vetor 2
         for(i=0; i<6; i++) {
-            for(j = 1 + i; j<6; j++) {
-                
+            for(j = 1 + i; j<6; j++) {  
                 if(vetor2[j] == vetor2[i]) {
                     cont++;
                 }
