@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Karla:wght@200;500;700&display=swap');
+
+:root {
+    --fonte-titulo: 'Karla', sans-serif;
+    --fonte-texto: 'Inconsolata', monospace;
+}
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    list-style: none;
+    background-color: rgb(204, 195, 245);
+}
+
+h1 {
+    font-family: var(--fonte-titulo);
+    font-size: 2.5em;
+    margin: 2%;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: var(--fonte-texto);
+    margin-bottom: 30px;
+}
+
+
+h6 {
+    font-size: 1.0em;
+    font-family: var(--fonte-texto);
+    margin-bottom: 20px;
+}
+
+.botao {
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 20%;
+    font-size: 1em;
+    font-family: var(--fonte-titulo);
+    background-color: rgb(187, 80, 178);
+    border-radius: 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.botao:hover {
+    transition: 0.6s;
+    font-weight: bold;
+    font-size: 1.3em;
+    opacity: 80%;
+}
+.container {
+    background-color: aliceblue;
+    font-size: 2em;
+    font-family: var(--fonte-texto);
+    border-radius: 20px;
+    padding: 30px;
+    margin: 2% 20%;
+    text-align: center;
+}

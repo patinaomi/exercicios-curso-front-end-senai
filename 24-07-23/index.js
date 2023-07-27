@@ -9,7 +9,7 @@ function vetores() {
     f[i] = new Array();
 
     for (j = 0; j < jMax; j++) {
-      f[i][j] = "[" + Math.round(Math.random() * 60) + "]";
+      f[i][j] = "[" + Math.floor(Math.random() * 60 + 1) + "]";
     }
   }
 
