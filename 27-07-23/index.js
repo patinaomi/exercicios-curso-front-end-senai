@@ -17,21 +17,21 @@ function result() {
     cont = 0;
 
     //criação vetor unidimensional - cartela
-    for (lin = 0; lin < 6; lin++) {
-      vetorCartela[lin] = Math.floor(Math.random() * 60 + 1);
+    for (col = 0; col < 6; col++) {
+      vetorCartela[col] = Math.floor(Math.random() * 60 + 1);
     }
-    vetorCartela.sort();
 
+    vetorCartela.sort((a, b) => a - b);
+    
     //criação vetor bidimensional - resultados
     for (lin = 0; lin < 10; lin++) {
       vetorResultados[lin] = new Array();
-
+      
       for (col = 0; col < 6; col++) {
         vetorResultados[lin][col] = Math.floor(Math.random() * 60 + 1);
       }
     }
-    vetorResultados.sort();
-
+    
     //elimina números repetidos do vetor - cartela
     for (lin = 0; lin < 6; lin++) {
       for (j = 1 + lin; j < 6; j++) {
@@ -40,7 +40,7 @@ function result() {
         }
       }
     }
-
+    
     //elimina números repetidos do vetor - resultado
     for (lin = 0; lin < 10; lin++) {
       for (col = 0; col < 6; col++) {
@@ -52,6 +52,7 @@ function result() {
       }
     }
   }
+
   // apresentação vetor cartela
   for (i = 0; i < 6; i++) {
     resultCartela += "[" + vetorCartela[i] + "] ";
@@ -59,17 +60,25 @@ function result() {
 
   // apresentação vetor resultados
   for (lin = 0; lin < 10; lin++) {
-    resultSorteio += "Resultado Sorteio <br>" + megasena + "<br>";
+    resultSorteio += "<h4>Resultado Sorteio nº" + megasena + "</h4>";
     for (col = 0; col < 6; col++) {
       resultSorteio += "[" + vetorResultados[lin][col] + "] ";
     }
 
-    resultSorteio += "<br><hr>";
+    resultSorteio += "<br><br><hr>";
     megasena++;
   }
 
-
-
+  // //contagem acertos
+  // for (lin = 0; lin < 10; lin++) {
+  //   for (col = 0; col < 6; col++) {
+  //     for (l = 1 + col; l < 6; l++) {
+  //      //AQUI TEM QUE SER UM ARRAYMAP
+  //       }
+  //     }
+  //   }
+  // }
+   
 
   document.getElementById("resultado-cartela").innerHTML = resultCartela;
   document.getElementById("resultado-sorteio").innerHTML = resultSorteio;
