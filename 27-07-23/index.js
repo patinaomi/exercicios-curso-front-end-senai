@@ -20,6 +20,7 @@ function result() {
     for (lin = 0; lin < 6; lin++) {
       vetorCartela[lin] = Math.floor(Math.random() * 60 + 1);
     }
+    vetorCartela.sort();
 
     //criação vetor bidimensional - resultados
     for (lin = 0; lin < 10; lin++) {
@@ -29,6 +30,7 @@ function result() {
         vetorResultados[lin][col] = Math.floor(Math.random() * 60 + 1);
       }
     }
+    vetorResultados.sort();
 
     //elimina números repetidos do vetor - cartela
     for (lin = 0; lin < 6; lin++) {
@@ -66,27 +68,8 @@ function result() {
     megasena++;
   }
 
-  // vetorAcertos = new Array();
 
-  //   for(lin=0; lin<10; lin++) {
-  //       for(col = 0; col<6; col++) {
 
-  //         for(t=1+col; t<6; t++) {
-
-  //             if(vetorCartela[lin][col] == vetorResultados[lin][t]) {
-  //                 acertos++;
-  //               }
-  //         }
-  //          }
-  //         }
-
-  //         console.log(acertos);
-
-  const vetorAcertos = vetorCartela.map(myFunction);
-
-  function myFunction(num) {
-    return num * 10;
-  }
 
   document.getElementById("resultado-cartela").innerHTML = resultCartela;
   document.getElementById("resultado-sorteio").innerHTML = resultSorteio;
