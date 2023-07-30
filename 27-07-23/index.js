@@ -8,6 +8,8 @@ function result() {
 
   vetorCartela = new Array();
 
+  vetorAcertos = new Array();
+
   var lin, col, t;
 
   vetorResultados = new Array();
@@ -60,7 +62,7 @@ function result() {
 
   // apresentação vetor resultados
   for (lin = 0; lin < 10; lin++) {
-    resultSorteio += "<h4>Resultado Sorteio nº" + megasena + "</h4>";
+    resultSorteio += "<h4>Sorteio nº" + megasena + "</h4>";
     for (col = 0; col < 6; col++) {
       resultSorteio += "[" + vetorResultados[lin][col] + "] ";
     }
@@ -69,18 +71,20 @@ function result() {
     megasena++;
   }
 
-  // //contagem acertos
-  // for (lin = 0; lin < 10; lin++) {
-  //   for (col = 0; col < 6; col++) {
-  //     for (l = 1 + col; l < 6; l++) {
-  //      //AQUI TEM QUE SER UM ARRAYMAP
-  //       }
-  //     }
-  //   }
-  // }
+  //contagem acertos
+  for (lin = 0; lin < 10; lin++) {
+     for (col = 0; col < 6; col++) {
+       for (l = 1 + col; l < 6; l++) {
+        if(vetorResultados[lin][col] === vetorResultados[lin][l]) {
+            
+        }
+      }
+    }
+    document.getElementById("resultado-acertos").innerHTML = "novoArray";
+     }
    
-
+     
+  
   document.getElementById("resultado-cartela").innerHTML = resultCartela;
   document.getElementById("resultado-sorteio").innerHTML = resultSorteio;
-  document.getElementById("resultado-acertos").innerHTML = resultAcertos;
 }
