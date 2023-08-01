@@ -4,22 +4,24 @@ function result() {
   var resultAcertos = "";
   var cont;
   var megasena = 1;
-  var acertos = 0;
 
-  vetorCartela = new Array();
+  vetorCartela = new Array(6);
+  vetorAcertos = new Array(10);
 
-  var lin, col, t;
+  var lin, col, l;
 
-  vetorResultados = new Array();
+  vetorResultados = new Array(6);
 
   while (cont != 0) {
     cont++;
     cont = 0;
 
     //criação vetor unidimensional - cartela
-    for (lin = 0; lin < 6; lin++) {
-      vetorCartela[lin] = Math.floor(Math.random() * 60 + 1);
+    for (col = 0; col < 6; col++) {
+      vetorCartela[col] = Math.floor(Math.random() * 60 + 1);
     }
+
+    vetorCartela.sort((a, b) => a - b);
 
     //criação vetor bidimensional - resultados
     for (lin = 0; lin < 10; lin++) {
@@ -50,6 +52,7 @@ function result() {
       }
     }
   }
+
   // apresentação vetor cartela
   for (i = 0; i < 6; i++) {
     resultCartela += "[" + vetorCartela[i] + "] ";
@@ -57,38 +60,30 @@ function result() {
 
   // apresentação vetor resultados
   for (lin = 0; lin < 10; lin++) {
-    resultSorteio += "Resultado Sorteio <br>" + megasena + "<br>";
+    resultSorteio += "<h4>Sorteio nº" + megasena + "</h4>";
     for (col = 0; col < 6; col++) {
       resultSorteio += "[" + vetorResultados[lin][col] + "] ";
     }
 
-    resultSorteio += "<br><hr>";
+    resultSorteio += "<br><br><hr>";
     megasena++;
   }
 
-  // vetorAcertos = new Array();
-
-  //   for(lin=0; lin<10; lin++) {
-  //       for(col = 0; col<6; col++) {
-
-  //         for(t=1+col; t<6; t++) {
-
-  //             if(vetorCartela[lin][col] == vetorResultados[lin][t]) {
-  //                 acertos++;
-  //               }
-  //         }
-  //          }
-  //         }
-
-  //         console.log(acertos);
-
-  const vetorAcertos = vetorCartela.map(myFunction);
-
-  function myFunction(num) {
-    return num * 10;
+  //contagem acertos
+  for (lin = 0; lin < 10; lin++) {
+    var acertos = 0;
+    for (col = 0; col < 6; col++) {
+      for (l = 0; l < 6; l++) {
+        if (vetorCartela[col] == vetorResultados[lin][l]) {
+          acertos++;
+          break;
+        }
+      }
+    }
+    vetorAcertos[lin] = "[" + acertos + "] ";
   }
 
   document.getElementById("resultado-cartela").innerHTML = resultCartela;
   document.getElementById("resultado-sorteio").innerHTML = resultSorteio;
-  document.getElementById("resultado-acertos").innerHTML = resultAcertos;
+  document.getElementById("resultado-acertos").innerHTML = vetorAcertos;
 }

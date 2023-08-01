@@ -51,10 +51,14 @@ h6 {
 
 .container {
     background-color: aliceblue;
-    font-size: 2em;
+    font-size: 1.8em;
     font-family: var(--fonte-texto);
-    border-radius: 20px;
     padding: 30px;
     margin: 2% 20%;
     text-align: center;
+}
+
+.container h4 {
+    font-size: 1.1em;
+    background: none;
 }
