@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-family: 'Borel', cursive;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 150px 5px;
+    gap: 20px;
+}
+
+.cabecalho-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    background-color: antiquewhite;
+}
+
+.cabecalho-1:hover {
+    font-size: 5.5em;
+    transition: 0.4s;
+}
+
+.titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 4em;
+    background-color: antiquewhite;
+}
+
+.conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 30px;
+    column-gap: 10px;
+
+    
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: burlywood;
+    padding: 10%;
+    font-size: 1.5em;
+    border-radius: 30px;
+    
+
+}
+
+.menu:hover {
+    transition: 0.3s;
+    font-size: 1.8em;
+}
+
+.banner {
+    display: grid;
+    grid-template-rows: 100%;
+    gap: 2px;
+    background-color: antiquewhite;
+    
+}
+
+.banner-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    gap: 2px;
+
+}
+.container {
+    background-color: rgb(216, 172, 115);
+    padding: 10%;
+
+}
