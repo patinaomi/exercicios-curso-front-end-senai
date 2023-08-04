@@ -1,92 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bellota+Text&family=Borel&family=Lilita+One&display=swap');
+
+
+/* font-family: 'Bellota Text', cursive;
+font-family: 'Borel', cursive;
+font-family: 'Lilita One', cursive;
+*/
+
 
 * {
     box-sizing: border-box;
-    text-align: center;
     padding: 0;
     margin: 0;
-    font-family: 'Borel', cursive;
+
+}
+
+body {
+    height: 100vh;
 }
 
 .cabecalho {
     display: grid;
-    grid-template-columns: 20% 80%;
-    grid-template-rows: 150px 5px;
-    gap: 20px;
-}
-
-.cabecalho-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5em;
-    background-color: antiquewhite;
-}
-
-.cabecalho-1:hover {
-    font-size: 5.5em;
-    transition: 0.4s;
-}
-
-.titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 4em;
-    background-color: antiquewhite;
-}
-
-.conteudo {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 60px 30px;
-    column-gap: 10px;
-
+    grid-template-columns: 9% 90%;
+    grid-template-rows: 150px;
+    gap: 1%;
     
 }
 
+.coracao {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    width: 200px;
+   
+}
+
+
+.titulo {
+    padding: 30px;
+    text-align: center;
+    font-size: 4em;
+    font-family: 'Borel', cursive;
+    
+}
+
+.conteudo {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 50px ;
+    gap: 10px 10px;
+}
+
 .menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+    text-align: center;
+    font-family: 'Lilita One', cursive;
     background-color: burlywood;
-    padding: 10%;
+    padding: 10px;
     font-size: 1.5em;
     border-radius: 30px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
     
 
 }
 
 .menu:hover {
     transition: 0.3s;
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 .banner {
     display: grid;
-    grid-template-rows: 100%;
-    gap: 2px;
+    grid-template-columns: repeat(2, auto auto);
+    grid-template-rows: 500px;
     background-color: antiquewhite;
     
 }
 
-.banner-imagem {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.gato-digitando {
+    margin: auto auto;
+}
+
+.texto-gato {
+    margin: 5%;
+    font-size: 1.5em;
+    font-family: 'Bellota Text', cursive;
+    text-align: left;
+    line-height: 1cm;
 
 }
 
-footer {
+.texto-gato h3 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.rodape {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 30% 29% 40%);
+    grid-template-rows: auto auto auto;
+    gap: 3px;
+    
+}
 
-    gap: 2px;
+
+
+.container {
+    padding: 4% 2%;
+    background-color: rgb(216, 172, 115);
+    text-align: left;
+    font-family: 'Bellota Text', cursive;
 
 }
-.container {
-    background-color: rgb(216, 172, 115);
-    padding: 10%;
+
+.img-gato {
+    height: 100px;
+}
+
+
+.mapouter{
+    height:fit-content;
+    width: 100%;
+}
+
+
+.gmap_canvas{
+    overflow: hidden;
+    background: rgb(216, 172, 115);
+    height:fit-content;
+    width: 100%;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .cabecalho {
+        grid-template-columns: 1fr;
+        font-size: 1em;
+    }
+
+    .titulo {
+        
+        font-size: 3em;
+    }
+    .coracao {
+        width: 250px;
+        margin: auto auto;
+        padding: 4em;
+        
+
+       
+    }
+    .conteudo {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 1em;
+        
+        
+    }
+
+    .menu {
+        font-family: 'Lilita One', cursive;
+        background-color: burlywood;
+        font-size: 1.5em;
+        box-shadow: none;
+ 
+    
+    }
+
+    .texto-gato {
+        margin: 2%;
+        font-size: 1.4em;
+        line-height: normal;
+    }
+    .banner {
+        grid-template-columns: 1fr;
+        font-size: 1em;
+    }
+
+    .rodape {
+        grid-template-columns: 1fr;
+    }
+
+    .container {
+        text-align: center;
+    }
 
 }
